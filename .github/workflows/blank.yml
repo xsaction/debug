@@ -27,7 +27,7 @@ jobs:
     - uses: actions/checkout@main
     - name: ipv6
       run: |
-        sudo wget -N git.io/warp.sh && chmod +x warp.sh
+        wget -N git.io/warp.sh && chmod +x warp.sh
         sudo bash warp.sh wg6
     - name: Start SSH via ngrok
       uses: P3TERX/ssh2actions@main
